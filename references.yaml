@@ -1,0 +1,192 @@
+# CSL references with stable IDs; cite using Pandoc [@id] syntax.
+# Record identities and supporting passages in sources.md and claims.yaml.
+references:
+  [
+    {
+      "id": "osada2002",
+      "type": "article-journal",
+      "title": "Shape distributions",
+      "author": [
+        {
+          "family": "Osada",
+          "given": "Robert"
+        },
+        {
+          "family": "Funkhouser",
+          "given": "Thomas"
+        },
+        {
+          "family": "Chazelle",
+          "given": "Bernard"
+        },
+        {
+          "family": "Dobkin",
+          "given": "David"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2002
+          ]
+        ]
+      },
+      "container-title": "ACM Transactions on Graphics",
+      "volume": "21",
+      "issue": "4",
+      "page": "807-832",
+      "DOI": "10.1145/571647.571648",
+      "URL": "https://www.cs.princeton.edu/~funk/tog02.pdf"
+    },
+    {
+      "id": "parisotto2022",
+      "type": "article",
+      "title": "Unsupervised Clustering of Roman Potsherds via Variational Autoencoders",
+      "author": [
+        {
+          "family": "Parisotto",
+          "given": "Simone"
+        },
+        {
+          "family": "Leone",
+          "given": "Ninetta"
+        },
+        {
+          "family": "Schönlieb",
+          "given": "Carola-Bibiane"
+        },
+        {
+          "family": "Launaro",
+          "given": "Alessandro"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2022
+          ]
+        ]
+      },
+      "DOI": "10.48550/arXiv.2203.07437",
+      "URL": "https://arxiv.org/abs/2203.07437"
+    },
+    {
+      "id": "tatsuda2026",
+      "type": "dataset",
+      "title": "Supplementary material for Deep learning-based morphological classification of ceramics: A case study of 3D Point Cloud Analysis for Sue ware, Japan",
+      "author": [
+        {
+          "family": "Tatsuda",
+          "given": "Wataru"
+        },
+        {
+          "family": "Hori",
+          "given": "Ryo"
+        },
+        {
+          "family": "Morikawa",
+          "given": "Kimiyasu"
+        },
+        {
+          "family": "Inoue",
+          "given": "Hayata"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "version": "15c4cd4b8211afcb556deed8774ed226638494f7",
+      "URL": "https://github.com/dv-wataru-tatsuda/ceramicnet-supplement",
+      "note": "CC BY 4.0; accompanying article DOI 10.1016/j.jas.2026.106472"
+    },
+    {
+      "id": "nonaka2024",
+      "type": "article-journal",
+      "title": "Cultural attraction in pottery practice: Group-specific shape transformations by potters from three communities",
+      "author": [
+        {
+          "family": "Nonaka",
+          "given": "Tetsushi"
+        },
+        {
+          "family": "Gandon",
+          "given": "Enora"
+        },
+        {
+          "family": "Endler",
+          "given": "John A."
+        },
+        {
+          "family": "Coyle",
+          "given": "Thelma"
+        },
+        {
+          "family": "Bootsma",
+          "given": "Reinoud J."
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "container-title": "PNAS Nexus",
+      "volume": "3",
+      "issue": "2",
+      "page": "pgae055",
+      "DOI": "10.1093/pnasnexus/pgae055",
+      "URL": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10898857/"
+    },
+    {
+      "id": "locatello2019",
+      "type": "paper-conference",
+      "title": "Challenging Common Assumptions in the Unsupervised Learning of Disentangled Representations",
+      "author": [
+        {
+          "family": "Locatello",
+          "given": "Francesco"
+        },
+        {
+          "family": "Bauer",
+          "given": "Stefan"
+        },
+        {
+          "family": "Lucic",
+          "given": "Mario"
+        },
+        {
+          "family": "Rätsch",
+          "given": "Gunnar"
+        },
+        {
+          "family": "Gelly",
+          "given": "Sylvain"
+        },
+        {
+          "family": "Schölkopf",
+          "given": "Bernhard"
+        },
+        {
+          "family": "Bachem",
+          "given": "Olivier"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2019
+          ]
+        ]
+      },
+      "container-title": "Proceedings of the 36th International Conference on Machine Learning",
+      "volume": "97",
+      "page": "4114-4124",
+      "URL": "https://proceedings.mlr.press/v97/locatello19a.html"
+    }
+  ]

@@ -1,0 +1,428 @@
+schema: 1
+coverage: reviewed
+reviewed_manuscript_sha256: eaaf3e6f144f41856a62ad13b545177609c1be69bd639ecd53eaae1be33f2a8a
+claims:
+  - id: abstract-records
+    kind: computation
+    passage: "An empty region in a map of ceramic shapes can invite a historical explanation: perhaps potters could not make those forms, had no use for them, or preferred something else. The map alone cannot distinguish these possibilities. We separate geometrically describable forms, forms achievable under specified production conditions, historically made forms, and recorded observations. A reproducible study of 917 archived Sue-ware point clouds examines the last distinction. It compares distance-distribution descriptors, principal components and a compact autoencoder under missing geometry, sampling noise and alternative normalizations. In a fixed held-out comparison, randomly removing half the points preserves 34.3% of the descriptor map's ten-neighbour relationships; removing a contiguous half preserves 9.2%. Ordinary principal-component compression preserves 99.0% of the complete-data neighbourhoods, while whitening introduces substantial instability. These findings concern this recording and representation pipeline, not ceramic form in general. A separate construction demonstrates that identical observed profile segments can belong to geometrically different complete forms. Together, the argument and study specify what a broader computational account of making would need: an explicit observation model, production evidence independent of the shape representation, and historical comparisons that remain defensible when the record changes."
+    evidence:
+      file: "simulation/output/results.json"
+      run_id: "measurement"
+      pointer: "/dataset/records"
+      reported: "917"
+      scale: 1
+      decimals: 0
+      units: "point-cloud records"
+      conditions: "Pinned CeramicNet position records loaded after duplicate-array check."
+  - id: abstract-thinning
+    kind: computation
+    passage: "An empty region in a map of ceramic shapes can invite a historical explanation: perhaps potters could not make those forms, had no use for them, or preferred something else. The map alone cannot distinguish these possibilities. We separate geometrically describable forms, forms achievable under specified production conditions, historically made forms, and recorded observations. A reproducible study of 917 archived Sue-ware point clouds examines the last distinction. It compares distance-distribution descriptors, principal components and a compact autoencoder under missing geometry, sampling noise and alternative normalizations. In a fixed held-out comparison, randomly removing half the points preserves 34.3% of the descriptor map's ten-neighbour relationships; removing a contiguous half preserves 9.2%. Ordinary principal-component compression preserves 99.0% of the complete-data neighbourhoods, while whitening introduces substantial instability. These findings concern this recording and representation pipeline, not ceramic form in general. A separate construction demonstrates that identical observed profile segments can belong to geometrically different complete forms. Together, the argument and study specify what a broader computational account of making would need: an explicit observation model, production evidence independent of the shape representation, and historical comparisons that remain defensible when the record changes."
+    evidence:
+      file: "simulation/output/results.json"
+      run_id: "measurement"
+      pointer: "/headline/uniform_half_descriptor/overlap"
+      reported: "34.3%"
+      scale: 100
+      decimals: 1
+      units: "percent ten-neighbour overlap"
+      conditions: "First split (seed 17), observed-radius normalization, zero coordinate noise, held-out records; paired comparison against the complete-input map."
+  - id: abstract-clipping
+    kind: computation
+    passage: "An empty region in a map of ceramic shapes can invite a historical explanation: perhaps potters could not make those forms, had no use for them, or preferred something else. The map alone cannot distinguish these possibilities. We separate geometrically describable forms, forms achievable under specified production conditions, historically made forms, and recorded observations. A reproducible study of 917 archived Sue-ware point clouds examines the last distinction. It compares distance-distribution descriptors, principal components and a compact autoencoder under missing geometry, sampling noise and alternative normalizations. In a fixed held-out comparison, randomly removing half the points preserves 34.3% of the descriptor map's ten-neighbour relationships; removing a contiguous half preserves 9.2%. Ordinary principal-component compression preserves 99.0% of the complete-data neighbourhoods, while whitening introduces substantial instability. These findings concern this recording and representation pipeline, not ceramic form in general. A separate construction demonstrates that identical observed profile segments can belong to geometrically different complete forms. Together, the argument and study specify what a broader computational account of making would need: an explicit observation model, production evidence independent of the shape representation, and historical comparisons that remain defensible when the record changes."
+    evidence:
+      file: "simulation/output/results.json"
+      run_id: "measurement"
+      pointer: "/headline/clip_half_descriptor/overlap"
+      reported: "9.2%"
+      scale: 100
+      decimals: 1
+      units: "percent ten-neighbour overlap"
+      conditions: "First split (seed 17), observed-radius normalization, zero coordinate noise, held-out records; paired comparison against the complete-input map."
+  - id: abstract-compression
+    kind: computation
+    passage: "An empty region in a map of ceramic shapes can invite a historical explanation: perhaps potters could not make those forms, had no use for them, or preferred something else. The map alone cannot distinguish these possibilities. We separate geometrically describable forms, forms achievable under specified production conditions, historically made forms, and recorded observations. A reproducible study of 917 archived Sue-ware point clouds examines the last distinction. It compares distance-distribution descriptors, principal components and a compact autoencoder under missing geometry, sampling noise and alternative normalizations. In a fixed held-out comparison, randomly removing half the points preserves 34.3% of the descriptor map's ten-neighbour relationships; removing a contiguous half preserves 9.2%. Ordinary principal-component compression preserves 99.0% of the complete-data neighbourhoods, while whitening introduces substantial instability. These findings concern this recording and representation pipeline, not ceramic form in general. A separate construction demonstrates that identical observed profile segments can belong to geometrically different complete forms. Together, the argument and study specify what a broader computational account of making would need: an explicit observation model, production evidence independent of the shape representation, and historical comparisons that remain defensible when the record changes."
+    evidence:
+      file: "simulation/output/results.json"
+      run_id: "measurement"
+      pointer: "/compression_controls/14/overlap"
+      reported: "99.0%"
+      scale: 100
+      decimals: 1
+      units: "percent ten-neighbour overlap"
+      conditions: "Seed 17, observed normalization, complete unwhitened PCA versus complete descriptor map."
+  - id: scope-of-a-map
+    kind: definition
+    passage: "Computational morphospaces are useful precisely because they make relationships available for inspection. A morphospace is a representation in which objects are located according to measured or inferred features; distance expresses a chosen kind of difference. It can assist retrieval, expose inconsistencies in a classification, or make a comparison reproducible. These are worthwhile achievements even when the coordinates have no direct causal meaning."
+    rationale: "Working definition; distances express the selected representation, not an independently established causal metric."
+  - id: conditional-feasibility
+    kind: definition
+    passage: "Within a chosen $G$, define $F(m,p,k,e)$ as the forms achievable with material conditions $m$, a production procedure $p$, a specified range of skill $k$, and an operating environment $e$. “Achievable” needs an operational meaning: for example, successful production to a declared tolerance at a stated frequency. A single exceptional success and reliable workshop production answer different questions. Their feasible regions need not coincide."
+    rationale: "Feasibility is explicitly conditional on material, procedure, skill range and environment; successful production requires a declared operational criterion."
+  - id: non-nesting
+    kind: interpretation
+    passage: "These distinctions should not be pictured as four universally nested sets. A historical object may fall outside the representation altogether; an observed reconstruction may be a geometry no one ever made. At a fixed time and under fully specified production conditions, actual production provides evidence of feasibility. Across changing conditions and lossy representations, that relation has to be established rather than assumed."
+    rationale: "A lossy representation and a reconstructed record need not be subsets of historical production. Conditional production witnesses feasibility only under its actual conditions."
+  - id: two-models
+    kind: definition
+    passage: "Here $g$ is a form, $D$ its record, and $O$ describes recording and preservation conditions. The second expression concerns the historical distribution of forms given production conditions $X$ and historical circumstances $H$. These expressions are a division of questions, not a fitted causal model. Different combinations of production, selection and recording can induce the same observed distribution."
+    rationale: "Notation divides observation from historical explanation. Neither probability distribution is fitted in this study."
+  - id: function-circularity
+    kind: interpretation
+    passage: "Function presents a related problem. If a vessel is called a storage jar because of its geometry, and a model subsequently predicts “storage” from that geometry, the prediction can reproduce the assignment rule without independently recovering use. Residue, use-wear, context or other evidence would have to carry the independent part of that inference. Geometric, functional and manufacturing similarities may overlap, but there is no reason to identify them by definition."
+    rationale: "Predicting a geometry-assigned label may reproduce the label rule. Independent use evidence is proposed, not claimed to be available in this corpus."
+  - id: prior-profile-mapping
+    kind: source
+    passage: "There is already substantial work on representing and comparing ceramic geometry. Parisotto and colleagues use a variational autoencoder and hierarchical clustering to assist the matching of Roman potsherd profiles. Their ROCOPOT material comes from published corpora, separates fragment types, and focuses the analysis on rims. Archaeological inspection remains part of evaluating the proposed matches [@parisotto2022, secs. 2 and 4.5]. A new embedding, by itself, would therefore make a weak claim to novelty."
+    evidence:
+      citation_id: "parisotto2022"
+      locator: "Sections 2 and 4.5"
+      verified: true
+      verification_note: "Read the corpus description and archaeological evaluation: ROCOPOT uses published fragment profiles, restricts the matching analysis to rims, and includes archaeological inspection. No complete-vessel feasibility claim is attributed."
+  - id: prior-selection
+    kind: source
+    passage: "That study also shows why documentation belongs inside the scientific question. The profiles needed processing to reconcile presentation differences, and the dataset construction excluded some one-of-a-kind profiles [@parisotto2022, sec. 2]. Such decisions can be appropriate for matching. Their consequences change when the question becomes the occupation of an entire space, especially its rare or empty regions. Suitability for retrieval is not automatically suitability for estimating historical prevalence."
+    evidence:
+      citation_id: "parisotto2022"
+      locator: "Section 2, dataset construction"
+      verified: true
+      verification_note: "The inspected description discusses preprocessing publication profiles and excluding one-of-a-kind profiles; consequences for prevalence are our interpretation."
+  - id: d2-precedent
+    kind: source
+    passage: "Shape distributions offer a comparatively transparent representation. Osada and colleagues describe signatures formed from distributions of geometric measurements, including distances between pairs of surface points [@osada2002, pp. 812-813]. These distances are invariant to translation and rotation. They also discard the arrangement of the pairs. The resulting signature is useful because it compresses an object into something readily compared; the compression is also a limit on what can be reconstructed from it."
+    evidence:
+      citation_id: "osada2002"
+      locator: "Introduction and shape functions; pp. 807-809, 812-813"
+      verified: true
+      verification_note: "Read author-hosted PDF. D2 is a distribution of distances between random surface points. Our quantiles sample supplied points, not an area-uniform surface reconstruction."
+  - id: disentanglement
+    kind: source
+    passage: "Learned coordinates introduce additional choices. Their variation may combine scale, preservation, recording style and features of interest. Locatello and colleagues establish limits on recovering disentangled factors through unsupervised learning without inductive assumptions [@locatello2019]. That result does not prohibit useful representations. It does caution against naming an axis “skill” or “function” solely because objects are ordered along it. Such names require evidence outside the optimization objective."
+    evidence:
+      citation_id: "locatello2019"
+      locator: "Abstract, impossibility/result statements"
+      verified: true
+      verification_note: "Read PMLR abstract and bibliographic record. The statement concerns unsupervised disentanglement absent inductive biases; the manuscript does not extend the theorem to all geometric explanation."
+  - id: process-observations
+    kind: source
+    passage: "There is a more productive route from form toward making. Nonaka and colleagues examine contemporary potters reproducing target forms, recording both final shapes and trajectories of formation. Their analyses find individual and community differences in those trajectories [@nonaka2024, Results]. The process observations make a different question available from the one answered by a static collection. They still do not enumerate all feasible vessels or isolate every influence on skill. They demonstrate the value of observing production directly."
+    evidence:
+      citation_id: "nonaka2024"
+      locator: "Abstract, Results on individual/community trajectories, Methods"
+      verified: true
+      verification_note: "Read the primary PMC article sections. Potters reproduce target forms; intermediate shape trajectories support restricted individual/community comparisons, not an exhaustive feasible frontier."
+  - id: archive-provenance
+    kind: source
+    passage: "The input is the publicly released CeramicNet supplement for Sue ware from Japan [@tatsuda2026]. The selected repository version contains 917 point-cloud records, each with 1024 points and five supplied morphological categories. These comprise bowls, dish bodies, dish bodies with ring bases, dish caps and plates. We use positions, exclude the supplied surface normals, and leave the separate upside-down copies outside the experiment."
+    evidence:
+      citation_id: "tatsuda2026"
+      locator: "Pinned repository README, LICENSE, CITATION.cff and data files at 15c4cd4b8211afcb556deed8774ed226638494f7"
+      verified: true
+      verification_note: "Inspected source metadata/preprocessing and downloaded every selected data blob with Git SHA-1 and SHA-256 checks. The linked journal article's performance claims are not used."
+  - id: archive-count
+    kind: computation
+    passage: "The input is the publicly released CeramicNet supplement for Sue ware from Japan [@tatsuda2026]. The selected repository version contains 917 point-cloud records, each with 1024 points and five supplied morphological categories. These comprise bowls, dish bodies, dish bodies with ring bases, dish caps and plates. We use positions, exclude the supplied surface normals, and leave the separate upside-down copies outside the experiment."
+    evidence:
+      file: "simulation/output/results.json"
+      run_id: "measurement"
+      pointer: "/dataset/records"
+      reported: "917"
+      scale: 1
+      decimals: 0
+      units: "records"
+      conditions: "All selected position records, upside-down copies excluded."
+  - id: archive-points
+    kind: computation
+    passage: "The input is the publicly released CeramicNet supplement for Sue ware from Japan [@tatsuda2026]. The selected repository version contains 917 point-cloud records, each with 1024 points and five supplied morphological categories. These comprise bowls, dish bodies, dish bodies with ring bases, dish caps and plates. We use positions, exclude the supplied surface normals, and leave the separate upside-down copies outside the experiment."
+    evidence:
+      file: "simulation/output/results.json"
+      run_id: "measurement"
+      pointer: "/dataset/points"
+      reported: "1024"
+      scale: 1
+      decimals: 0
+      units: "points per record"
+      conditions: "Uniform record length verified by downloader and study."
+  - id: archive-limits
+    kind: interpretation
+    passage: "The files are reference observations, not certified complete original vessels. No exact duplicate position arrays were found. Filename-derived source identifiers are kept together during splitting, but the archive does not establish the workshop, potter or site independence needed for a cross-cultural generalization. Nor do we interpret its category labels as social groups. The result concerns sensitivity within this collection."
+    rationale: "Exact-array duplicate check found none; filename source groups are not evidence of archaeological independence. Split group IDs remain in output/splits.json."
+  - id: descriptor-definition
+    kind: definition
+    passage: "For each cloud, the representation begins with 64 quantiles of distances between sampled pairs of points. This adapts the D2 idea to supplied point clouds. Sampling these recorded points is not equivalent to sampling a reconstructed surface uniformly by area: the acquisition and resampling density already enters the measurement."
+    rationale: "64 D2-style quantiles are a chosen descriptor; acquisition density remains part of the measure. The design and study.py specify 8192 sampled pairs."
+  - id: scale-and-oracle
+    kind: definition
+    passage: "Two primary versions retain or remove scale. The first keeps archive coordinate scale, without claiming a verified conversion to physical units. The second divides distances by the maximum radius of the observed cloud about its centroid. The latter can compare relative shape, but its denominator changes when the observation loses an extremity. An additional oracle condition uses the complete cloud's radius to diagnose that effect. It is not a normalization that would be available from an unknown fragment alone."
+    rationale: "Observed normalization uses only observed geometry; the complete-radius oracle is an explicit diagnostic and never an available fragment predictor."
+  - id: split-and-training
+    kind: assumption
+    passage: "The full descriptors are compared with eight principal components and with a small autoencoder trained to reconstruct those descriptors. Training, validation and test records are separated before fitting either the input standardization or the learned representations. Each of three fixed splits has 549 training records, 184 validation records and 184 test records. Perturbations of an object stay in its split. Category labels are used to balance the split and describe dispersion, never as training targets."
+    rationale: "Three fixed group/category-balanced 60/20/20 splits yield 549/184/184 records, independently checked against output/splits.json. All fitting uses training records; labels balance splits but are not prediction targets."
+  - id: recording-interventions
+    kind: assumption
+    passage: "The interventions remove points uniformly or remove a contiguous portion through a half-space cut. Both retain the prescribed number of points. Separate conditions add coordinate noise. The same changed records are supplied to every representation, allowing paired comparisons. This is a controlled recording experiment: a planar cut is not a model of how archaeological ceramics fracture, and Gaussian noise does not represent every scanning error."
+    rationale: "Prespecified uniform and half-space recording masks; these are sensitivity treatments, not calibrated archaeological fracture or scan-error distributions."
+  - id: metrics
+    kind: definition
+    passage: "Each test map is compared with its own complete-input reference. We measure the overlap of each object's ten nearest neighbours, the rank correlation of all pairwise distances, and the ratio of mean within-category to between-category squared distances. The last quantity describes morphological archive labels. A change in it is not evidence of altered cultural diversity."
+    rationale: "Local overlap, global distance rank and archive-label dispersion answer distinct questions; no category label is interpreted as a social population."
+  - id: post-run-diagnostics
+    kind: interpretation
+    passage: "The initial protocol standardized each principal-component coordinate, giving components with small training variance comparable weight to dominant components. An independent descriptor-sampling control exposed substantial instability under this whitening. We therefore added ordinary unwhitened PCA while retaining the original results. We also compared each complete-data embedding with the complete descriptor map. These are diagnostic extensions made after the initial run; they are not presented as independently preregistered confirmations."
+    rationale: "Protocol amendments disclose that descriptor resampling and unwhitened PCA/compression controls followed the initial run; original whitened results and prior execution receipts are retained."
+  - id: uniform-overlap
+    kind: computation
+    passage: "For the first fixed split, randomly removing half the points leaves 34.3% of the observed-scale-normalized descriptor map's ten-neighbour relationships intact. The conditional object-row bootstrap interval is 31.6% to 37.4%. Removing a contiguous half leaves 9.2%, with an interval of 8.0% to 10.4%. The intervals resample object-level overlaps against a fixed gallery. They do not describe uncertainty across archaeological populations."
+    evidence:
+      file: "simulation/output/results.json"
+      run_id: "measurement"
+      pointer: "/headline/uniform_half_descriptor/overlap"
+      reported: "34.3%"
+      scale: 100
+      decimals: 1
+      units: "percent ten-neighbour overlap"
+      conditions: "First split (seed 17), observed-radius normalization, zero coordinate noise, held-out records; paired comparison against the complete-input map."
+  - id: uniform-ci-low
+    kind: computation
+    passage: "For the first fixed split, randomly removing half the points leaves 34.3% of the observed-scale-normalized descriptor map's ten-neighbour relationships intact. The conditional object-row bootstrap interval is 31.6% to 37.4%. Removing a contiguous half leaves 9.2%, with an interval of 8.0% to 10.4%. The intervals resample object-level overlaps against a fixed gallery. They do not describe uncertainty across archaeological populations."
+    evidence:
+      file: "simulation/output/results.json"
+      run_id: "measurement"
+      pointer: "/headline/uniform_half_descriptor/overlap_ci95_conditional/0"
+      reported: "31.6%"
+      scale: 100
+      decimals: 1
+      units: "percent ten-neighbour overlap"
+      conditions: "First split (seed 17), observed-radius normalization, zero coordinate noise, held-out records; paired comparison against the complete-input map."
+  - id: uniform-ci-high
+    kind: computation
+    passage: "For the first fixed split, randomly removing half the points leaves 34.3% of the observed-scale-normalized descriptor map's ten-neighbour relationships intact. The conditional object-row bootstrap interval is 31.6% to 37.4%. Removing a contiguous half leaves 9.2%, with an interval of 8.0% to 10.4%. The intervals resample object-level overlaps against a fixed gallery. They do not describe uncertainty across archaeological populations."
+    evidence:
+      file: "simulation/output/results.json"
+      run_id: "measurement"
+      pointer: "/headline/uniform_half_descriptor/overlap_ci95_conditional/1"
+      reported: "37.4%"
+      scale: 100
+      decimals: 1
+      units: "percent ten-neighbour overlap"
+      conditions: "First split (seed 17), observed-radius normalization, zero coordinate noise, held-out records; paired comparison against the complete-input map."
+  - id: clip-overlap
+    kind: computation
+    passage: "For the first fixed split, randomly removing half the points leaves 34.3% of the observed-scale-normalized descriptor map's ten-neighbour relationships intact. The conditional object-row bootstrap interval is 31.6% to 37.4%. Removing a contiguous half leaves 9.2%, with an interval of 8.0% to 10.4%. The intervals resample object-level overlaps against a fixed gallery. They do not describe uncertainty across archaeological populations."
+    evidence:
+      file: "simulation/output/results.json"
+      run_id: "measurement"
+      pointer: "/headline/clip_half_descriptor/overlap"
+      reported: "9.2%"
+      scale: 100
+      decimals: 1
+      units: "percent ten-neighbour overlap"
+      conditions: "First split (seed 17), observed-radius normalization, zero coordinate noise, held-out records; paired comparison against the complete-input map."
+  - id: clip-ci-low
+    kind: computation
+    passage: "For the first fixed split, randomly removing half the points leaves 34.3% of the observed-scale-normalized descriptor map's ten-neighbour relationships intact. The conditional object-row bootstrap interval is 31.6% to 37.4%. Removing a contiguous half leaves 9.2%, with an interval of 8.0% to 10.4%. The intervals resample object-level overlaps against a fixed gallery. They do not describe uncertainty across archaeological populations."
+    evidence:
+      file: "simulation/output/results.json"
+      run_id: "measurement"
+      pointer: "/headline/clip_half_descriptor/overlap_ci95_conditional/0"
+      reported: "8.0%"
+      scale: 100
+      decimals: 1
+      units: "percent ten-neighbour overlap"
+      conditions: "First split (seed 17), observed-radius normalization, zero coordinate noise, held-out records; paired comparison against the complete-input map."
+  - id: clip-ci-high
+    kind: computation
+    passage: "For the first fixed split, randomly removing half the points leaves 34.3% of the observed-scale-normalized descriptor map's ten-neighbour relationships intact. The conditional object-row bootstrap interval is 31.6% to 37.4%. Removing a contiguous half leaves 9.2%, with an interval of 8.0% to 10.4%. The intervals resample object-level overlaps against a fixed gallery. They do not describe uncertainty across archaeological populations."
+    evidence:
+      file: "simulation/output/results.json"
+      run_id: "measurement"
+      pointer: "/headline/clip_half_descriptor/overlap_ci95_conditional/1"
+      reported: "10.4%"
+      scale: 100
+      decimals: 1
+      units: "percent ten-neighbour overlap"
+      conditions: "First split (seed 17), observed-radius normalization, zero coordinate noise, held-out records; paired comparison against the complete-input map."
+  - id: uniform-rank
+    kind: computation
+    passage: "The difference is also visible beyond immediate neighbours. The corresponding pairwise-distance rank correlations are 0.910 for uniform thinning and 0.148 for clipping. Across the three splits, descriptor neighbourhood overlap under half-clipping remains between 8.1% and 9.2%; under half-thinning it lies between 34.3% and 38.4%. Those repeated splits reuse this archive and its recording treatments, so they are sensitivity checks rather than independent replications."
+    evidence:
+      file: "simulation/output/results.json"
+      run_id: "measurement"
+      pointer: "/headline/uniform_half_descriptor/distance_rank"
+      reported: "0.910"
+      scale: 1
+      decimals: 3
+      units: "Spearman rank correlation"
+      conditions: "First split (seed 17), observed-radius normalization, zero coordinate noise, held-out records; paired comparison against the complete-input map."
+  - id: clip-rank
+    kind: computation
+    passage: "The difference is also visible beyond immediate neighbours. The corresponding pairwise-distance rank correlations are 0.910 for uniform thinning and 0.148 for clipping. Across the three splits, descriptor neighbourhood overlap under half-clipping remains between 8.1% and 9.2%; under half-thinning it lies between 34.3% and 38.4%. Those repeated splits reuse this archive and its recording treatments, so they are sensitivity checks rather than independent replications."
+    evidence:
+      file: "simulation/output/results.json"
+      run_id: "measurement"
+      pointer: "/headline/clip_half_descriptor/distance_rank"
+      reported: "0.148"
+      scale: 1
+      decimals: 3
+      units: "Spearman rank correlation"
+      conditions: "First split (seed 17), observed-radius normalization, zero coordinate noise, held-out records; paired comparison against the complete-input map."
+  - id: uniform-range-low
+    kind: computation
+    passage: "The difference is also visible beyond immediate neighbours. The corresponding pairwise-distance rank correlations are 0.910 for uniform thinning and 0.148 for clipping. Across the three splits, descriptor neighbourhood overlap under half-clipping remains between 8.1% and 9.2%; under half-thinning it lies between 34.3% and 38.4%. Those repeated splits reuse this archive and its recording treatments, so they are sensitivity checks rather than independent replications."
+    evidence:
+      file: "simulation/output/results.json"
+      run_id: "measurement"
+      pointer: "/rows/228/overlap"
+      reported: "34.3%"
+      scale: 100
+      decimals: 1
+      units: "percent ten-neighbour overlap"
+      conditions: "Minimum/maximum across seeds 17, 29, 43; observed-normalized descriptor, half loss, zero noise. Repeated splits, not independent populations."
+  - id: uniform-range-high
+    kind: computation
+    passage: "The difference is also visible beyond immediate neighbours. The corresponding pairwise-distance rank correlations are 0.910 for uniform thinning and 0.148 for clipping. Across the three splits, descriptor neighbourhood overlap under half-clipping remains between 8.1% and 9.2%; under half-thinning it lies between 34.3% and 38.4%. Those repeated splits reuse this archive and its recording treatments, so they are sensitivity checks rather than independent replications."
+    evidence:
+      file: "simulation/output/results.json"
+      run_id: "measurement"
+      pointer: "/rows/232/overlap"
+      reported: "38.4%"
+      scale: 100
+      decimals: 1
+      units: "percent ten-neighbour overlap"
+      conditions: "Minimum/maximum across seeds 17, 29, 43; observed-normalized descriptor, half loss, zero noise. Repeated splits, not independent populations."
+  - id: clip-range-low
+    kind: computation
+    passage: "The difference is also visible beyond immediate neighbours. The corresponding pairwise-distance rank correlations are 0.910 for uniform thinning and 0.148 for clipping. Across the three splits, descriptor neighbourhood overlap under half-clipping remains between 8.1% and 9.2%; under half-thinning it lies between 34.3% and 38.4%. Those repeated splits reuse this archive and its recording treatments, so they are sensitivity checks rather than independent replications."
+    evidence:
+      file: "simulation/output/results.json"
+      run_id: "measurement"
+      pointer: "/rows/560/overlap"
+      reported: "8.1%"
+      scale: 100
+      decimals: 1
+      units: "percent ten-neighbour overlap"
+      conditions: "Minimum/maximum across seeds 17, 29, 43; observed-normalized descriptor, half loss, zero noise. Repeated splits, not independent populations."
+  - id: clip-range-high
+    kind: computation
+    passage: "The difference is also visible beyond immediate neighbours. The corresponding pairwise-distance rank correlations are 0.910 for uniform thinning and 0.148 for clipping. Across the three splits, descriptor neighbourhood overlap under half-clipping remains between 8.1% and 9.2%; under half-thinning it lies between 34.3% and 38.4%. Those repeated splits reuse this archive and its recording treatments, so they are sensitivity checks rather than independent replications."
+    evidence:
+      file: "simulation/output/results.json"
+      run_id: "measurement"
+      pointer: "/rows/552/overlap"
+      reported: "9.2%"
+      scale: 100
+      decimals: 1
+      units: "percent ten-neighbour overlap"
+      conditions: "Minimum/maximum across seeds 17, 29, 43; observed-normalized descriptor, half loss, zero noise. Repeated splits, not independent populations."
+  - id: pair-resampling
+    kind: computation
+    passage: "Sampling the descriptor itself also matters. On unchanged complete clouds, replacing the sampled point pairs retains 58.4% of the normalized descriptor map's neighbours, although its global distance ranking remains much more stable. Consequently, the loss under uniform thinning cannot all be attributed to missing geometry. Part reflects a finite, sampled descriptor operating among many close neighbours. The paired clipping result is more disruptive, but its magnitude is still specific to this pipeline."
+    evidence:
+      file: "simulation/output/results.json"
+      run_id: "measurement"
+      pointer: "/sampling_controls/12/overlap"
+      reported: "58.4%"
+      scale: 100
+      decimals: 1
+      units: "percent ten-neighbour overlap"
+      conditions: "Seed 17 observed-normalized descriptor on unchanged complete clouds; independent descriptor pair sample versus original pair sample."
+  - id: compression-control
+    kind: computation
+    passage: "Compression need not add much damage. Ordinary PCA retains 99.0% of the complete descriptor map's ten-neighbour relationships on this split. Its half-clipping overlap is 9.2%, essentially the same descriptive result as the full descriptor. This is evidence that a modest linear representation can preserve the relationships available in these inputs. It does not establish that eight coordinates suffice for all ceramic geometries."
+    evidence:
+      file: "simulation/output/results.json"
+      run_id: "measurement"
+      pointer: "/compression_controls/14/overlap"
+      reported: "99.0%"
+      scale: 100
+      decimals: 1
+      units: "percent ten-neighbour overlap"
+      conditions: "Seed 17 observed normalization, complete unwhitened PCA versus complete descriptor map."
+  - id: unwhitened-clipping
+    kind: computation
+    passage: "Compression need not add much damage. Ordinary PCA retains 99.0% of the complete descriptor map's ten-neighbour relationships on this split. Its half-clipping overlap is 9.2%, essentially the same descriptive result as the full descriptor. This is evidence that a modest linear representation can preserve the relationships available in these inputs. It does not establish that eight coordinates suffice for all ceramic geometries."
+    evidence:
+      file: "simulation/output/results.json"
+      run_id: "measurement"
+      pointer: "/headline/clip_half_pca_unwhitened/overlap"
+      reported: "9.2%"
+      scale: 100
+      decimals: 1
+      units: "percent ten-neighbour overlap"
+      conditions: "First split (seed 17), observed-radius normalization, zero coordinate noise, held-out records; paired comparison against the complete-input map."
+  - id: whitened-resampling
+    kind: computation
+    passage: "Whitening tells a different story. Resampling the pairs on unchanged complete clouds leaves only 13.8% of the whitened PCA map's neighbours intact. Giving low-variance directions substantial weight can promote sampling differences into geometric distinctions. Treating this as a general failure of principal components would miss the control: the unwhitened map behaves very differently."
+    evidence:
+      file: "simulation/output/results.json"
+      run_id: "measurement"
+      pointer: "/sampling_controls/13/overlap"
+      reported: "13.8%"
+      scale: 100
+      decimals: 1
+      units: "percent ten-neighbour overlap"
+      conditions: "Seed 17, observed normalization; unchanged complete inputs, independent descriptor pair sample, whitened PCA."
+  - id: autoencoder-clipping
+    kind: computation
+    passage: "The autoencoder supplies no rescue from severe missing geometry in this comparison. Its normalized half-clipping overlap is 8.4%. This is neither an estimate of the best attainable neural performance nor a test of the published CeramicNet classifier. It is a bounded comparison using a compact model on the same descriptors. Different inputs, objectives or training distributions could produce different results."
+    evidence:
+      file: "simulation/output/results.json"
+      run_id: "measurement"
+      pointer: "/headline/clip_half_autoencoder/overlap"
+      reported: "8.4%"
+      scale: 100
+      decimals: 1
+      units: "percent ten-neighbour overlap"
+      conditions: "First split (seed 17), observed-radius normalization, zero coordinate noise, held-out records; paired comparison against the complete-input map."
+  - id: raw-normalization
+    kind: interpretation
+    passage: "Normalization changes the interpretation as well as the numbers. In the scale-preserving descriptor, half-clipping retains roughly a third to two-fifths of neighbourhoods across splits. That greater stability can reflect size relationships which normalization intentionally removes. It should not be called superior historical recovery without deciding whether size is part of the question. A large bowl and a small bowl may be close in relative shape and far apart in capacity, handling and production demands."
+    rationale: "All three raw-coordinate descriptor half-clipping rows preserve 33.7-39.8% of neighbours (rounded). Greater stability can preserve size rather than relative shape; superiority for historical recovery is not inferred."
+  - id: synthetic-volume
+    kind: computation
+    passage: "They coincide throughout the observed interval $z\\geq 0.6$. Below it, the second profile broadens. Numerical integration of $\\pi r(z)^2$ gives a 23.9% difference in enclosed volume despite zero difference on the observed interval. This is enclosed geometric volume, not usable vessel capacity: no inner wall or thickness has been specified."
+    evidence:
+      file: "simulation/output/results.json"
+      run_id: "measurement"
+      pointer: "/synthetic/relative_volume_difference"
+      reported: "23.9%"
+      scale: 100
+      decimals: 1
+      units: "percent relative enclosed geometric volume"
+      conditions: "Numerical integration of pi r(z)^2 over [0,1] for the two declared synthetic rotational profiles."
+  - id: synthetic-identifiability
+    kind: interpretation
+    passage: "A trained model may consistently prefer one completion. That consistency expresses information in its prior or training distribution; it does not make the missing interval observed. In a suitable setting, the prior can be justified. Nearby finds, known production sequences or independently established types may narrow the alternatives. The resulting claim should identify which evidence did the narrowing."
+    rationale: "The two explicitly constructed profiles agree exactly for z >= 0.6; synthetic/observed_max_difference is zero and covered by a unit test. Missing-body preference therefore requires a prior or external evidence. No manufacturability or usable-capacity claim."
+  - id: propagate-completions
+    kind: normative
+    passage: "The appropriate response is to propagate plausible alternatives into the historical comparison. If a conclusion survives all completions supported by the evidence, it has a different status from one that depends on a single convenient reconstruction. Where the alternatives are too broad, a local measurement of the preserved part may support a narrower but more defensible comparison."
+    rationale: "Proposed inference practice: retain alternatives compatible with external evidence and qualify conclusions that depend on imputation."
+  - id: production-evidence
+    kind: normative
+    passage: "Evidence for a manufacturing frontier should include attempts beyond already occupied forms. Otherwise, a model trained on successes can confuse the boundary of a tradition with the boundary of a process. Controlled attempts would need to record the target geometry, material preparation, forming method, practitioner experience, tolerances and outcomes. Failures matter, but their interpretation also needs care: one failed attempt does not establish impossibility, and a success under substantially different conditions does not demonstrate historical availability."
+    rationale: "Proposed future experiment including attempts, conditions and outcomes, not a claim that the present point-cloud study observed production."
+  - id: historical-evidence
+    kind: interpretation
+    passage: "Historical occupation requires a further comparison. Even when several forms are demonstrably feasible, their observed frequencies may reflect trade, use, teaching or selective survival. A convincing test should contrast explanations that predict different observations. A change in clay access might predict altered material composition alongside altered form; an explanation based on documentation practice might predict changes across publications rather than production contexts. A residual in a geometric model is not, by elimination, culture."
+    rationale: "Geometric residuals cannot identify culture without discriminating observations. Material access and documentation examples are hypothetical rival predictions."
+  - id: source-group-transfer
+    kind: normative
+    passage: "Nor should repeated observations inflate the evidence. Multiple scans, fragments, views or reconstructions of one object belong to one source group. When a claim concerns transfer between workshops or communities, holding out randomly chosen records is insufficient. The relevant historical grouping must itself be held out, with enough independent groups to make the comparison meaningful."
+    rationale: "Evaluation grouping should follow the intended unit of historical generalization, rather than treating views or reconstructions as independent."
+  - id: hyperparameters
+    kind: assumption
+    passage: "The archived implementation pins the source revision and verifies every downloaded Git blob before assembling the data archive. Analyses run without network access thereafter. Each descriptor uses 8192 sampled pairs and 64 quantiles spanning probabilities 0.01 to 0.99. PCA retains eight components. The autoencoder has widths 64-32-8-32-64, tanh hidden activations, Adam optimization and validation-based early stopping. Input and latent standardization use training records only; ordinary PCA leaves its component variances intact."
+    rationale: "Technical design is recorded in study.py, locked dependencies and protocol: descriptor sampling, network and normalization choices are not empirically calibrated optima."
+  - id: treatment-grid
+    kind: assumption
+    passage: "Point loss is tested at 0%, 25%, 50% and 75%. Noise standard deviations are 0%, 0.25% and 1% of the complete cloud's bounding-box diagonal. That diagonal defines the experimental treatment and is not supplied as an extra predictor. Mask direction, subsampling and perturbations are fixed by object; seeds 17, 29 and 43 control the three splits and model fits. All complete and perturbed records, including oracle normalization and the original whitened PCA, contribute to the released result tables. There is no selection of the best split."
+    rationale: "Fixed 0/25/50/75% loss and 0/0.25/1% bounding-box noise, with seeds 17/29/43; full-reference diagonal sets treatment magnitude only."
+  - id: uncertainty-limit
+    kind: interpretation
+    passage: "The conditional intervals use 1000 bootstrap resamples of object-level overlap values. Pairwise distances are dependent, and no significance test treating all pairs as independent observations is used. The sampling and compression controls were added as recorded diagnostics after the first run. Code, protocol amendments, exact splits, machine-readable results and execution receipts accompany the manuscript."
+    rationale: "1000 object-row bootstrap samples against a fixed gallery; dependent pair distances are not treated as independent observations. Conditional intervals do not quantify cross-population uncertainty."
+runs:
+  - id: measurement
+    required: true
+    record: verification/measurement.json

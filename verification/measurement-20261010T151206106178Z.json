@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "measurement",
+  "started": "2026-10-10T15:11:08.430504+00:00",
+  "finished": "2026-10-10T15:11:08.445926+00:00",
+  "command": [
+    "uv",
+    "run",
+    "--frozen",
+    "python",
+    "study.py"
+  ],
+  "cwd": "simulation",
+  "runtime": {
+    "scope": "recorder",
+    "python": "3.12.4 (v3.12.4:8e8a4baf65, Jun  6 2024, 17:33:18) [Clang 13.0.0 (clang-1300.0.29.30)]",
+    "platform": "macOS-15.1-arm64-arm-64bit"
+  },
+  "execution_result": "simulation/output/execution.json",
+  "execution": {
+    "status": "FAIL",
+    "exit_code": 2,
+    "detail": "command failed or was interrupted"
+  },
+  "input_scope": "execution-v1",
+  "additional_inputs": [
+    "simulation/data/clouds.npz",
+    "simulation/data-manifest.json"
+  ],
+  "inputs": {
+    "simulation/data/clouds.npz": "2eab541c16c3711f07c931fb27b65e1e2614c5e68d58de59c2dd896f2c7893a1",
+    "simulation/data-manifest.json": "31ac19600ba44b6c3c31b47a6860cb156b4ec910421cb947f38fa4d6ab546276",
+    "simulation/fetch_data.py": "061be28fde72629f94d874bb087300f73497a5796352b60a46da4c26b2c88d0c",
+    "simulation/pyproject.toml": "442741d5c7a8da2683375f0b473bf6f983e4e629d076b4414b5b37d018daa933",
+    "simulation/study.py": "bfef5f47f6808ff170fa789bce28839757b4eba555650e07de7071480ef18ae3",
+    "simulation/test_study.py": "efcd62acdfa660b278ac965009291836891cf977acce0156188f627be86be1cc",
+    "simulation/uv.lock": "65d99dec95ac240864ab1d3e8c9aa6c712617a28ddf2621beee5cb0a41f98cf7"
+  },
+  "artifacts": {
+    "simulation/output/results.json": "7a860729fb27921a7619fe7bbdfe8de58148176249684f4027b571ff06b557c6",
+    "simulation/output/splits.json": "4a3f560756db782a375547f59ae6dd361158868233cc35b44a7508d6b6be8225",
+    "paper/figures/ambiguity.pdf": "54901ac14e2e534ba7881494ef253db66e12e7be2b9d203c8fd9acd5f8f36244",
+    "paper/figures/recording.pdf": "30632451d3f55874670b336123d3c8f297d3a2c60cf082064e4eb94e1e1487ca",
+    "simulation/output/execution.json": "e80b7c1381f359e80ba70b8a95f952b3a55801fe2fc1e6ff5a3a6b6d6e3129e1"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "pdf_sha256": "bdc88ad2b4c3f7e059f6aa4990c26f1cba43c0366b9288ac879ceca3dc1f480a",
+  "reviewed": "2026-10-10",
+  "page_count": 11,
+  "pages_inspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "all_pages_inspected": true,
+  "notes": "Rendered every page at 115 dpi with pdftoppm and inspected page images. Title breaks after colon, followed by institute and date. Body, equations, two figures, running headers and references remain legible, with no clipping or missing glyphs observed. After the publication metadata rebuild, every page PNG remains byte-identical to the inspected local edition. Build log has no warning or missing-character lines."
+}

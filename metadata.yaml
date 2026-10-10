@@ -1,0 +1,29 @@
+slug: the-possible-and-the-made
+web_slug: the-possible-and-the-made
+title: 'The Possible and the Made: What a Morphospace Can Explain About Ceramic Form'
+header: THE POSSIBLE AND THE MADE
+created: 2026-10
+date: October 2026
+paper_dir: paper
+has_simulation: true
+claims_target: claims.yaml
+genre: methodological argument with a recording-sensitivity study
+repo: git@github.com:piatra-institute/papers-the-possible-and-the-made.git
+github: https://github.com/piatra-institute/papers-the-possible-and-the-made
+status: published
+web_blurb: 'An empty region in a ceramic shape map cannot distinguish what potters could not make from what they did not make or what the record omits. A study of 917 Sue-ware point clouds separates recording loss from representation effects: ordinary PCA preserves complete-map neighbourhoods well, while clipping and normalization change them substantially.'
+abstract: 'An empty region in a map of ceramic shapes can invite a historical explanation: perhaps potters
+  could not make those forms, had no use for them, or preferred something else. The map alone cannot distinguish
+  these possibilities. We separate geometrically describable forms, forms achievable under specified production
+  conditions, historically made forms, and recorded observations. A reproducible study of 917 archived
+  Sue-ware point clouds examines the last distinction. It compares distance-distribution descriptors,
+  principal components and a compact autoencoder under missing geometry, sampling noise and alternative
+  normalizations. In a fixed held-out comparison, randomly removing half the points preserves 34.3% of
+  the descriptor map''s ten-neighbour relationships; removing a contiguous half preserves 9.2%. Ordinary
+  principal-component compression preserves 99.0% of the complete-data neighbourhoods, while whitening
+  introduces substantial instability. These findings concern this recording and representation pipeline,
+  not ceramic form in general. A separate construction demonstrates that identical observed profile segments
+  can belong to geometrically different complete forms. Together, the argument and study specify what
+  a broader computational account of making would need: an explicit observation model, production evidence
+  independent of the shape representation, and historical comparisons that remain defensible when the
+  record changes.'

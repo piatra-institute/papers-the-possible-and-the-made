@@ -1,0 +1,13 @@
+{
+  "manuscript_sha256": "eaaf3e6f144f41856a62ad13b545177609c1be69bd639ecd53eaae1be33f2a8a",
+  "reviewed": "2026-10-10",
+  "reviewer": "Codex agent; not external peer review",
+  "full_read": true,
+  "argument_review": true,
+  "structure_review": true,
+  "voice_review": true,
+  "source_review": true,
+  "final_read": true,
+  "notes": "Full final manuscript read against sources, results, claims and the strongest rival; subject-led structure and advisory voice candidates reviewed. See editorial.md for decisions and limitations.",
+  "remaining": "Local edition complete. Publication and external validation are separate."
+}

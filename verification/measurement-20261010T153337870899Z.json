@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "measurement",
+  "started": "2026-10-10T15:12:54.731825+00:00",
+  "finished": "2026-10-10T15:13:34.878519+00:00",
+  "command": [
+    ".venv/bin/python",
+    "study.py"
+  ],
+  "cwd": "simulation",
+  "runtime": {
+    "scope": "recorder",
+    "python": "3.12.4 (v3.12.4:8e8a4baf65, Jun  6 2024, 17:33:18) [Clang 13.0.0 (clang-1300.0.29.30)]",
+    "platform": "macOS-15.1-arm64-arm-64bit"
+  },
+  "execution_result": "simulation/output/execution.json",
+  "execution": {
+    "status": "PASS",
+    "exit_code": 0,
+    "detail": "suite reports PASS"
+  },
+  "input_scope": "execution-v1",
+  "additional_inputs": [
+    "simulation/data/clouds.npz",
+    "simulation/data-manifest.json"
+  ],
+  "inputs": {
+    "simulation/data/clouds.npz": "2eab541c16c3711f07c931fb27b65e1e2614c5e68d58de59c2dd896f2c7893a1",
+    "simulation/data-manifest.json": "31ac19600ba44b6c3c31b47a6860cb156b4ec910421cb947f38fa4d6ab546276",
+    "simulation/fetch_data.py": "061be28fde72629f94d874bb087300f73497a5796352b60a46da4c26b2c88d0c",
+    "simulation/pyproject.toml": "442741d5c7a8da2683375f0b473bf6f983e4e629d076b4414b5b37d018daa933",
+    "simulation/study.py": "fda01ca073990a1fa7cf299d0f499a9815f4f54ba97c2fb4dfb49ae9f994a96f",
+    "simulation/test_study.py": "efcd62acdfa660b278ac965009291836891cf977acce0156188f627be86be1cc",
+    "simulation/uv.lock": "65d99dec95ac240864ab1d3e8c9aa6c712617a28ddf2621beee5cb0a41f98cf7"
+  },
+  "artifacts": {
+    "simulation/output/results.json": "93661a053df83fe9031f4f8a1ff6fe5f0c4a96d4095a608cd99e72153d0774b6",
+    "simulation/output/splits.json": "4a3f560756db782a375547f59ae6dd361158868233cc35b44a7508d6b6be8225",
+    "paper/figures/ambiguity.pdf": "7798d5c9a4a253d12d4f6a826a8ddf16cef5756971ad2450cf1a90f1a6131305",
+    "paper/figures/recording.pdf": "7c4b3674e307ee766206713df5a41985b2aafcd489e96f8190da654cf7c79219",
+    "simulation/output/execution.json": "26d2bfb9ca9d2d9660a0dda6f1be4e52ed0d3f21545de0824b26566d97fa0f04"
+  }
+}

@@ -1,0 +1,357 @@
+{
+  "schema": 1,
+  "slug": "the-possible-and-the-made",
+  "stage": "local",
+  "status": "PASS",
+  "exit_code": 0,
+  "checks": [
+    {
+      "check": "metadata",
+      "status": "PASS",
+      "message": "required fields and manuscript-derived text agree",
+      "path": null
+    },
+    {
+      "check": "build",
+      "status": "PASS",
+      "message": "PDF and build inputs match recorded hashes",
+      "path": null
+    },
+    {
+      "check": "references",
+      "status": "PASS",
+      "message": "5 cited IDs resolve to 5 entries; factual support is checked in claims.yaml",
+      "path": null
+    },
+    {
+      "check": "claim:abstract-records",
+      "status": "PASS",
+      "message": "bound value matches (Pinned CeramicNet position records loaded after duplicate-array check.)",
+      "path": "simulation/output/results.json"
+    },
+    {
+      "check": "claim:abstract-thinning",
+      "status": "PASS",
+      "message": "bound value matches (First split (seed 17), observed-radius normalization, zero coordinate noise, held-out records; paired comparison against the complete-input map.)",
+      "path": "simulation/output/results.json"
+    },
+    {
+      "check": "claim:abstract-clipping",
+      "status": "PASS",
+      "message": "bound value matches (First split (seed 17), observed-radius normalization, zero coordinate noise, held-out records; paired comparison against the complete-input map.)",
+      "path": "simulation/output/results.json"
+    },
+    {
+      "check": "claim:abstract-compression",
+      "status": "PASS",
+      "message": "bound value matches (Seed 17, observed normalization, complete unwhitened PCA versus complete descriptor map.)",
+      "path": "simulation/output/results.json"
+    },
+    {
+      "check": "claim:scope-of-a-map",
+      "status": "PASS",
+      "message": "Working definition; distances express the selected representation, not an independently established causal metric.",
+      "path": null
+    },
+    {
+      "check": "claim:conditional-feasibility",
+      "status": "PASS",
+      "message": "Feasibility is explicitly conditional on material, procedure, skill range and environment; successful production requires a declared operational criterion.",
+      "path": null
+    },
+    {
+      "check": "claim:non-nesting",
+      "status": "PASS",
+      "message": "A lossy representation and a reconstructed record need not be subsets of historical production. Conditional production witnesses feasibility only under its actual conditions.",
+      "path": null
+    },
+    {
+      "check": "claim:two-models",
+      "status": "PASS",
+      "message": "Notation divides observation from historical explanation. Neither probability distribution is fitted in this study.",
+      "path": null
+    },
+    {
+      "check": "claim:function-circularity",
+      "status": "PASS",
+      "message": "Predicting a geometry-assigned label may reproduce the label rule. Independent use evidence is proposed, not claimed to be available in this corpus.",
+      "path": null
+    },
+    {
+      "check": "claim:prior-profile-mapping",
+      "status": "PASS",
+      "message": "Read the corpus description and archaeological evaluation: ROCOPOT uses published fragment profiles, restricts the matching analysis to rims, and includes archaeological inspection. No complete-vessel feasibility claim is attributed.",
+      "path": null
+    },
+    {
+      "check": "claim:prior-selection",
+      "status": "PASS",
+      "message": "The inspected description discusses preprocessing publication profiles and excluding one-of-a-kind profiles; consequences for prevalence are our interpretation.",
+      "path": null
+    },
+    {
+      "check": "claim:d2-precedent",
+      "status": "PASS",
+      "message": "Read author-hosted PDF. D2 is a distribution of distances between random surface points. Our quantiles sample supplied points, not an area-uniform surface reconstruction.",
+      "path": null
+    },
+    {
+      "check": "claim:disentanglement",
+      "status": "PASS",
+      "message": "Read PMLR abstract and bibliographic record. The statement concerns unsupervised disentanglement absent inductive biases; the manuscript does not extend the theorem to all geometric explanation.",
+      "path": null
+    },
+    {
+      "check": "claim:process-observations",
+      "status": "PASS",
+      "message": "Read the primary PMC article sections. Potters reproduce target forms; intermediate shape trajectories support restricted individual/community comparisons, not an exhaustive feasible frontier.",
+      "path": null
+    },
+    {
+      "check": "claim:archive-provenance",
+      "status": "PASS",
+      "message": "Inspected source metadata/preprocessing and downloaded every selected data blob with Git SHA-1 and SHA-256 checks. The linked journal article's performance claims are not used.",
+      "path": null
+    },
+    {
+      "check": "claim:archive-count",
+      "status": "PASS",
+      "message": "bound value matches (All selected position records, upside-down copies excluded.)",
+      "path": "simulation/output/results.json"
+    },
+    {
+      "check": "claim:archive-points",
+      "status": "PASS",
+      "message": "bound value matches (Uniform record length verified by downloader and study.)",
+      "path": "simulation/output/results.json"
+    },
+    {
+      "check": "claim:archive-limits",
+      "status": "PASS",
+      "message": "Exact-array duplicate check found none; filename source groups are not evidence of archaeological independence. Split group IDs remain in output/splits.json.",
+      "path": null
+    },
+    {
+      "check": "claim:descriptor-definition",
+      "status": "PASS",
+      "message": "64 D2-style quantiles are a chosen descriptor; acquisition density remains part of the measure. The design and study.py specify 8192 sampled pairs.",
+      "path": null
+    },
+    {
+      "check": "claim:scale-and-oracle",
+      "status": "PASS",
+      "message": "Observed normalization uses only observed geometry; the complete-radius oracle is an explicit diagnostic and never an available fragment predictor.",
+      "path": null
+    },
+    {
+      "check": "claim:split-and-training",
+      "status": "PASS",
+      "message": "Three fixed group/category-balanced 60/20/20 splits yield 549/184/184 records, independently checked against output/splits.json. All fitting uses training records; labels balance splits but are not prediction targets.",
+      "path": null
+    },
+    {
+      "check": "claim:recording-interventions",
+      "status": "PASS",
+      "message": "Prespecified uniform and half-space recording masks; these are sensitivity treatments, not calibrated archaeological fracture or scan-error distributions.",
+      "path": null
+    },
+    {
+      "check": "claim:metrics",
+      "status": "PASS",
+      "message": "Local overlap, global distance rank and archive-label dispersion answer distinct questions; no category label is interpreted as a social population.",
+      "path": null
+    },
+    {
+      "check": "claim:post-run-diagnostics",
+      "status": "PASS",
+      "message": "Protocol amendments disclose that descriptor resampling and unwhitened PCA/compression controls followed the initial run; original whitened results and prior execution receipts are retained.",
+      "path": null
+    },
+    {
+      "check": "claim:uniform-overlap",
+      "status": "PASS",
+      "message": "bound value matches (First split (seed 17), observed-radius normalization, zero coordinate noise, held-out records; paired comparison against the complete-input map.)",
+      "path": "simulation/output/results.json"
+    },
+    {
+      "check": "claim:uniform-ci-low",
+      "status": "PASS",
+      "message": "bound value matches (First split (seed 17), observed-radius normalization, zero coordinate noise, held-out records; paired comparison against the complete-input map.)",
+      "path": "simulation/output/results.json"
+    },
+    {
+      "check": "claim:uniform-ci-high",
+      "status": "PASS",
+      "message": "bound value matches (First split (seed 17), observed-radius normalization, zero coordinate noise, held-out records; paired comparison against the complete-input map.)",
+      "path": "simulation/output/results.json"
+    },
+    {
+      "check": "claim:clip-overlap",
+      "status": "PASS",
+      "message": "bound value matches (First split (seed 17), observed-radius normalization, zero coordinate noise, held-out records; paired comparison against the complete-input map.)",
+      "path": "simulation/output/results.json"
+    },
+    {
+      "check": "claim:clip-ci-low",
+      "status": "PASS",
+      "message": "bound value matches (First split (seed 17), observed-radius normalization, zero coordinate noise, held-out records; paired comparison against the complete-input map.)",
+      "path": "simulation/output/results.json"
+    },
+    {
+      "check": "claim:clip-ci-high",
+      "status": "PASS",
+      "message": "bound value matches (First split (seed 17), observed-radius normalization, zero coordinate noise, held-out records; paired comparison against the complete-input map.)",
+      "path": "simulation/output/results.json"
+    },
+    {
+      "check": "claim:uniform-rank",
+      "status": "PASS",
+      "message": "bound value matches (First split (seed 17), observed-radius normalization, zero coordinate noise, held-out records; paired comparison against the complete-input map.)",
+      "path": "simulation/output/results.json"
+    },
+    {
+      "check": "claim:clip-rank",
+      "status": "PASS",
+      "message": "bound value matches (First split (seed 17), observed-radius normalization, zero coordinate noise, held-out records; paired comparison against the complete-input map.)",
+      "path": "simulation/output/results.json"
+    },
+    {
+      "check": "claim:uniform-range-low",
+      "status": "PASS",
+      "message": "bound value matches (Minimum/maximum across seeds 17, 29, 43; observed-normalized descriptor, half loss, zero noise. Repeated splits, not independent populations.)",
+      "path": "simulation/output/results.json"
+    },
+    {
+      "check": "claim:uniform-range-high",
+      "status": "PASS",
+      "message": "bound value matches (Minimum/maximum across seeds 17, 29, 43; observed-normalized descriptor, half loss, zero noise. Repeated splits, not independent populations.)",
+      "path": "simulation/output/results.json"
+    },
+    {
+      "check": "claim:clip-range-low",
+      "status": "PASS",
+      "message": "bound value matches (Minimum/maximum across seeds 17, 29, 43; observed-normalized descriptor, half loss, zero noise. Repeated splits, not independent populations.)",
+      "path": "simulation/output/results.json"
+    },
+    {
+      "check": "claim:clip-range-high",
+      "status": "PASS",
+      "message": "bound value matches (Minimum/maximum across seeds 17, 29, 43; observed-normalized descriptor, half loss, zero noise. Repeated splits, not independent populations.)",
+      "path": "simulation/output/results.json"
+    },
+    {
+      "check": "claim:pair-resampling",
+      "status": "PASS",
+      "message": "bound value matches (Seed 17 observed-normalized descriptor on unchanged complete clouds; independent descriptor pair sample versus original pair sample.)",
+      "path": "simulation/output/results.json"
+    },
+    {
+      "check": "claim:compression-control",
+      "status": "PASS",
+      "message": "bound value matches (Seed 17 observed normalization, complete unwhitened PCA versus complete descriptor map.)",
+      "path": "simulation/output/results.json"
+    },
+    {
+      "check": "claim:unwhitened-clipping",
+      "status": "PASS",
+      "message": "bound value matches (First split (seed 17), observed-radius normalization, zero coordinate noise, held-out records; paired comparison against the complete-input map.)",
+      "path": "simulation/output/results.json"
+    },
+    {
+      "check": "claim:whitened-resampling",
+      "status": "PASS",
+      "message": "bound value matches (Seed 17, observed normalization; unchanged complete inputs, independent descriptor pair sample, whitened PCA.)",
+      "path": "simulation/output/results.json"
+    },
+    {
+      "check": "claim:autoencoder-clipping",
+      "status": "PASS",
+      "message": "bound value matches (First split (seed 17), observed-radius normalization, zero coordinate noise, held-out records; paired comparison against the complete-input map.)",
+      "path": "simulation/output/results.json"
+    },
+    {
+      "check": "claim:raw-normalization",
+      "status": "PASS",
+      "message": "All three raw-coordinate descriptor half-clipping rows preserve 33.7-39.8% of neighbours (rounded). Greater stability can preserve size rather than relative shape; superiority for historical recovery is not inferred.",
+      "path": null
+    },
+    {
+      "check": "claim:synthetic-volume",
+      "status": "PASS",
+      "message": "bound value matches (Numerical integration of pi r(z)^2 over [0,1] for the two declared synthetic rotational profiles.)",
+      "path": "simulation/output/results.json"
+    },
+    {
+      "check": "claim:synthetic-identifiability",
+      "status": "PASS",
+      "message": "The two explicitly constructed profiles agree exactly for z >= 0.6; synthetic/observed_max_difference is zero and covered by a unit test. Missing-body preference therefore requires a prior or external evidence. No manufacturability or usable-capacity claim.",
+      "path": null
+    },
+    {
+      "check": "claim:propagate-completions",
+      "status": "PASS",
+      "message": "Proposed inference practice: retain alternatives compatible with external evidence and qualify conclusions that depend on imputation.",
+      "path": null
+    },
+    {
+      "check": "claim:production-evidence",
+      "status": "PASS",
+      "message": "Proposed future experiment including attempts, conditions and outcomes, not a claim that the present point-cloud study observed production.",
+      "path": null
+    },
+    {
+      "check": "claim:historical-evidence",
+      "status": "PASS",
+      "message": "Geometric residuals cannot identify culture without discriminating observations. Material access and documentation examples are hypothetical rival predictions.",
+      "path": null
+    },
+    {
+      "check": "claim:source-group-transfer",
+      "status": "PASS",
+      "message": "Evaluation grouping should follow the intended unit of historical generalization, rather than treating views or reconstructions as independent.",
+      "path": null
+    },
+    {
+      "check": "claim:hyperparameters",
+      "status": "PASS",
+      "message": "Technical design is recorded in study.py, locked dependencies and protocol: descriptor sampling, network and normalization choices are not empirically calibrated optima.",
+      "path": null
+    },
+    {
+      "check": "claim:treatment-grid",
+      "status": "PASS",
+      "message": "Fixed 0/25/50/75% loss and 0/0.25/1% bounding-box noise, with seeds 17/29/43; full-reference diagonal sets treatment magnitude only.",
+      "path": null
+    },
+    {
+      "check": "claim:uncertainty-limit",
+      "status": "PASS",
+      "message": "1000 object-row bootstrap samples against a fixed gallery; dependent pair distances are not treated as independent observations. Conditional intervals do not quantify cross-population uncertainty.",
+      "path": null
+    },
+    {
+      "check": "run:measurement",
+      "status": "PASS",
+      "message": "execution completed; scientific outcome is separate",
+      "path": "verification/measurement.json"
+    },
+    {
+      "check": "editorial",
+      "status": "PASS",
+      "message": "recorded editorial review covers this manuscript",
+      "path": null
+    },
+    {
+      "check": "visual",
+      "status": "PASS",
+      "message": "recorded inspection covers all 11 pages of this PDF",
+      "path": null
+    },
+    {
+      "check": "deployment",
+      "status": "NOT_APPLICABLE",
+      "message": "local stage does not inspect or change deployment",
+      "path": null
+    }
+  ]
+}
